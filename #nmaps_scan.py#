@@ -25,7 +25,7 @@ def searchData():
 
 for address in ip_addresses:        
 #subprocess.call(['nmap','-p-', '-oX',dir, '192.168.0.1'])
-    print("Getting data for ip address", address)
+    print("Getting data for ip address ", address)
     cmd = "nmap -p- -oX " + dir + " " + address + "  > text.txt"
     os.system(cmd) #using system so the inital nmap call does not show 
     searchData()

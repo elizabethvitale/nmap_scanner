@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE nmaprun>
 <?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
-<!-- Nmap 7.60 scan initiated Tue Jan 21 08:54:16 2020 as: nmap -p- -oX /home/elizabeth/Desktop/nmaps/scan.xml 192.168.0.1 -->
-<nmaprun scanner="nmap" args="nmap -p- -oX /home/elizabeth/Desktop/nmaps/scan.xml 192.168.0.1" start="1579614856" startstr="Tue Jan 21 08:54:16 2020" version="7.60" xmloutputversion="1.04">
+<!-- Nmap 7.60 scan initiated Tue Jan 21 09:06:38 2020 as: nmap -p- -oX /home/elizabeth/Desktop/nmaps/scan.xml 192.168.0.1 -->
+<nmaprun scanner="nmap" args="nmap -p- -oX /home/elizabeth/Desktop/nmaps/scan.xml 192.168.0.1" start="1579615598" startstr="Tue Jan 21 09:06:38 2020" version="7.60" xmloutputversion="1.04">
 <scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
 <verbose level="0"/>
 <debugging level="0"/>
-<host starttime="1579614856" endtime="1579614858"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<host starttime="1579615598" endtime="1579615601"><status state="up" reason="syn-ack" reason_ttl="0"/>
 <address addr="192.168.0.1" addrtype="ipv4"/>
 <hostnames>
 <hostname name="_gateway" type="PTR"/>
@@ -25,8 +25,8 @@
 <port protocol="tcp" portid="28081"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
 <port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
 </ports>
-<times srtt="6956" rttvar="179" to="100000"/>
+<times srtt="6893" rttvar="139" to="100000"/>
 </host>
-<runstats><finished time="1579614858" timestr="Tue Jan 21 08:54:18 2020" elapsed="2.84" summary="Nmap done at Tue Jan 21 08:54:18 2020; 1 IP address (1 host up) scanned in 2.84 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+<runstats><finished time="1579615601" timestr="Tue Jan 21 09:06:41 2020" elapsed="2.85" summary="Nmap done at Tue Jan 21 09:06:41 2020; 1 IP address (1 host up) scanned in 2.85 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
 </runstats>
 </nmaprun>
