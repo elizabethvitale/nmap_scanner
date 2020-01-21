@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Tue Jan 21 08:54:16 2020 as: nmap -p- -oX /home/elizabeth/Desktop/nmaps/scan.xml 192.168.0.1 -->
+<nmaprun scanner="nmap" args="nmap -p- -oX /home/elizabeth/Desktop/nmaps/scan.xml 192.168.0.1" start="1579614856" startstr="Tue Jan 21 08:54:16 2020" version="7.60" xmloutputversion="1.04">
+<scaninfo type="connect" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1579614856" endtime="1579614858"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="192.168.0.1" addrtype="ipv4"/>
+<hostnames>
+<hostname name="_gateway" type="PTR"/>
+</hostnames>
+<ports><extraports state="closed" count="65525">
+<extrareasons reason="conn-refused" count="65525"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="23"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="telnet" method="table" conf="3"/></port>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="111"><state state="filtered" reason="no-response" reason_ttl="0"/><service name="rpcbind" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7547"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="cwmp" method="table" conf="3"/></port>
+<port protocol="tcp" portid="21515"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="28081"><state state="open" reason="syn-ack" reason_ttl="0"/></port>
+<port protocol="tcp" portid="49152"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="6956" rttvar="179" to="100000"/>
+</host>
+<runstats><finished time="1579614858" timestr="Tue Jan 21 08:54:18 2020" elapsed="2.84" summary="Nmap done at Tue Jan 21 08:54:18 2020; 1 IP address (1 host up) scanned in 2.84 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
