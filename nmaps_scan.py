@@ -1,10 +1,11 @@
 import os
 import subprocess
+import sys 
 from xml.dom import minidom
 
 dir = os.getcwd()
 dir = dir + '/scan.xml'
-ip_addresses = ["192.168.0.1"]
+#ip_addresses = ["192.168.0.1"]
 def searchData():
     scanned = minidom.parse(dir)
     openedports = scanned.getElementsByTagName('port')
@@ -22,7 +23,11 @@ def searchData():
         if((process == 'unknown') or (process == '')):
             process = 'Service origin is unknown!'
         print('PORT', f'{port.attributes["portid"].value:6}', 'STATE:', f'{state:10}', 'SERVICE:', process)
-
+ip_addresses = []
+for part in sys.argv:
+    if(part != 'nmaps_scan.py'):
+        ip_addresses.append(part)
+    
 for address in ip_addresses:        
 #subprocess.call(['nmap','-p-', '-oX',dir, '192.168.0.1'])
     print("Getting data for ip address", address)
